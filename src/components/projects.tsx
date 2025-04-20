@@ -11,7 +11,7 @@ const projects = [
         image: "/ficodo.png",
         tags: ["React", "Node.js", "MongoDB", "NextJs", "AWS", "WhatsApp", "AWS End User Messaging"],
         liveUrl: "https://ficodo.com",
-        detailUrl: '/project/1'
+        detailUrl: null
     },
     {
         id: 2,
@@ -22,7 +22,7 @@ This project explores cutting-edge features like React Server Components and the
         tags: ["NextJS", "React", "Tailwind CSS", "Zustand", "Vercel"],
         liveUrl: "https://filmyml.vercel.app",
         githubUrl: "https://github.com/mohankumar-v-s/filmyml-next",
-        detailUrl: '/project/2'
+        detailUrl: null
     },
 ]
 
@@ -84,9 +84,9 @@ export default function Projects() {
                                             <Github size={16} /> Code
                                         </a>
                                     )}
-                                    <Link className="text-blue-500 flex items-center gap-1" href={project.detailUrl}>
+                                    {project.detailUrl && <Link className="text-blue-500 flex items-center gap-1" href={project.detailUrl}>
                                         <ReceiptText size={16} />Details Page
-                                    </Link>
+                                    </Link>}
                                 </div>
                             </div>
                         </div>
