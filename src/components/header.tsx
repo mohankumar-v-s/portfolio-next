@@ -44,6 +44,7 @@ export default function Header() {
                         { name: "Projects", id: "projects" },
                         { name: "Skills", id: "skills" },
                         { name: "Experience", id: "experience" },
+                        { name: "Resume Review", id: "resume-review" },
                     ].map((item) => (
                         <button
                             key={item.id}
@@ -70,6 +71,7 @@ export default function Header() {
                             { name: "Projects", id: "projects" },
                             { name: "Skills", id: "skills" },
                             { name: "Experience", id: "experience" },
+                            { name: "Resume Review", id: "resume-review" },
                         ].map((item) => (
                             <button
                                 key={item.id}
